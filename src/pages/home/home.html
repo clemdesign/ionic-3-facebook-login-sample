@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button full (click)="fbLogin()">Connect with facebook</button>
+  <ion-card *ngIf="userProfile">
+    <img src="{{userProfile.picture.data.url}}" >
+    <p>{{userProfile.name}}</p>
+  </ion-card>
+</ion-content>
